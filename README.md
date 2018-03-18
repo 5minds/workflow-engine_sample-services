@@ -51,19 +51,19 @@ Vertrag manuel ablehnen
 Vertrags-Annahme anzeigen (mit `tradeId=123`)
 
 ```shell
-  > http POST http://localhost:5000/api/datastoreitems/123
+  > http GET http://localhost:5000/api/datastoreitems/123
 ```
 
 Vertrags-Ablehnung anzeigen
 
 ```shell
-  > http POST http://localhost:5000/api/datastoreitems/123
+  > http GET http://localhost:5000/api/datastoreitems/123
 ```
 
 Alle Einträge ansehen
 
 ```shell
-  > http POST http://localhost:5000/api/datastoreitems
+  > http GET http://localhost:5000/api/datastoreitems
 ```
 
 ### Wen kann ich auf das Projekt ansprechen?
