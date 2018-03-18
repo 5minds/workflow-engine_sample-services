@@ -4,15 +4,6 @@
 
 Einfach Verwendung von REST-Services zur Interaktion mit einer Workflow-Engine.
 
-## Relevante URLs
-
-> **TODO:** Eine Liste relevanter URLs, wie bspw. die URL des Production-Systems, Links auf Jenkins Reports, verwendete 3rd-Party-APIs etc.
->
-> **Beispiel:**
->
-> *   http://buchbinder-preview.mindassist.net - Preview-Server
-> *   http://buchbinder.de/irgendeine_kampagne.html - visuelle Vorlage für unser Redesign
-
 ## Wie kann ich das Projekt aufsetzen?
 
 ### Voraussetzungen
@@ -22,13 +13,16 @@ Einfach Verwendung von REST-Services zur Interaktion mit einer Workflow-Engine.
 
 ## Wie kann ich das Projekt benutzen?
 
-### Benutzung
-
 Starten der Anwendung mittels:
 
 ```shell
   > dotnet run
 ```
+
+Oder unter `Releases` die entsprechende Version laden und dann `./FakeServices`
+(macos) oder `./FakeServices.exe` (win64).
+
+### Benutzung
 
 Vertrag bestätigen
 

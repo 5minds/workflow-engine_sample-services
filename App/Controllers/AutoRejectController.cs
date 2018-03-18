@@ -15,7 +15,6 @@ namespace App.Controllers
     public class AutoRejectController : ControllerBase
     {
         [HttpPost]
-
         public IActionResult Post([FromBody] AutoRejectData value)
         {
             var correleationId = default(StringValues);
