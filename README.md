@@ -33,7 +33,7 @@ Starten der Anwendung mittels:
 Vertrag bestätigen
 
 ```shell
-  > http POST http://localhost:5000/api/autoreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello
+  > http POST http://localhost:5000/api/confirm X-CORRELATION-ID:12345 TradeId=123 Reason=hello UserId=123
 ```
 
 Vertrag automatisch ablehnen
@@ -45,19 +45,25 @@ Vertrag automatisch ablehnen
 Vertrag manuel ablehnen
 
 ```shell
-  > http POST http://localhost:5000/api/autoreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello
+  > http POST http://localhost:5000/api/manualreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello UserId=123
 ```
 
-Vertrags-Annahme anzeigen
+Vertrags-Annahme anzeigen (mit `tradeId=123`)
 
 ```shell
-  > http POST http://localhost:5000/api/autoreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello
+  > http POST http://localhost:5000/api/datastoreitems/123
 ```
 
 Vertrags-Ablehnung anzeigen
 
 ```shell
-  > http POST http://localhost:5000/api/autoreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello
+  > http POST http://localhost:5000/api/datastoreitems/123
+```
+
+Alle Einträge ansehen
+
+```shell
+  > http POST http://localhost:5000/api/datastoreitems
 ```
 
 ### Wen kann ich auf das Projekt ansprechen?
