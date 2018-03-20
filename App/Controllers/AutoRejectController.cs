@@ -11,8 +11,7 @@ namespace App.Controllers
     using SharedDataStore;
 
     [Route("api/[controller]")]
-    [ApiController]
-    public class AutoRejectController : ControllerBase
+    public class AutoRejectController : Controller
     {
         [HttpPost]
         public IActionResult Post([FromBody] AutoRejectData value)

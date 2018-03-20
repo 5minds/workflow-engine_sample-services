@@ -11,8 +11,7 @@ namespace App.Controllers
     using SharedDataStore;
 
     [Route("api/[controller]")]
-    [ApiController]
-    public class ConfirmController : ControllerBase
+    public class ConfirmController : Controller
     {
         [HttpPost]
         public IActionResult Post([FromBody] ConfirmData value)

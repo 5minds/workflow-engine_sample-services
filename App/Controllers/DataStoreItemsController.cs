@@ -16,8 +16,7 @@
     }
 
     [Route("api/[controller]")]
-    [ApiController]
-    public class DataStoreItemsController : ControllerBase
+    public class DataStoreItemsController : Controller
     {
         // GET api/values
         [HttpGet]
