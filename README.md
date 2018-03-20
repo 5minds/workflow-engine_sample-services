@@ -28,18 +28,24 @@ Vertrag bestätigen
 
 ```shell
   > http POST http://localhost:5000/api/confirm X-CORRELATION-ID:12345 TradeId=123 Reason=hello UserId=123
+
+  > http POST http://localhost:5000/api/confirm?X-CORRELATION-ID=12345 TradeId=123 Reason=hello UserId=123
 ```
 
 Vertrag automatisch ablehnen
 
 ```shell
   > http POST http://localhost:5000/api/autoreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello
+
+  > http POST http://localhost:5000/api/autoreject?X-CORRELATION-ID=12345 TradeId=123 Reason=hello
 ```
 
 Vertrag manuel ablehnen
 
 ```shell
   > http POST http://localhost:5000/api/manualreject X-CORRELATION-ID:12345 TradeId=123 Reason=hello UserId=123
+
+  > http POST http://localhost:5000/api/manualreject?X-CORRELATION-ID=12345 TradeId=123 Reason=hello UserId=123
 ```
 
 Vertrags-Annahme anzeigen (mit `tradeId=123`)
